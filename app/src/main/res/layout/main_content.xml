@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/qr_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.cfd.freya.digipay.MainActivity"
+
+        android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/card_view"
+        android:layout_weight="9.50"
+        android:layout_alignParentStart="false"
+        android:textAlignment="center">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="      YOUR BILL"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="13dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:textAlignment="textEnd"
+            android:hint="DATE"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/from"
+            android:layout_below="@id/date"
+            android:textAlignment="textStart"
+            android:text="SELLER:"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/storename"
+            android:layout_below="@id/from"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:background="@color/md_light_statusbar" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/to"
+            android:layout_below="@id/storename"
+            android:layout_marginTop="20dp"
+            android:text="BUYER:"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:layout_below="@id/to"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:background="@color/md_light_statusbar" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimaryLight">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="ITEM"
+            android:layout_weight="0.25"
+            android:textAlignment="center"
+            android:textStyle="normal|bold" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Quantity"
+            android:layout_weight="0.25"
+            android:textAlignment="center"
+            android:textStyle="normal|bold" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textSize="16dp"
+            android:layout_weight="0.25"
+            android:textAlignment="center"
+            android:textStyle="normal|bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subtotal"
+            android:textSize="16dp"
+            android:layout_weight="0.25"
+            android:textAlignment="center"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="30dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/total"
+            android:layout_below="@id/list"
+            android:layout_marginTop="30dp"
+            android:text="GRAND TOTAL:"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="textStart" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalvalue"
+            android:layout_below="@id/list"
+            android:textSize="36sp"
+            android:textAlignment="center" />
+</LinearLayout>
+    <Button
+        android:id="@+id/buttonPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Payment"
+        android:background="#e74c3c"
+        android:textColor="@android:color/white" />
+    </LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:layout_marginTop="20dp"
+    android:background="@color/md_blue_grey_100">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:textAlignment="textEnd"
+        android:hint="DATE"
+        android:layout_marginTop="20dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/from"
+        android:layout_below="@id/date"
+        android:textAlignment="textStart"
+        android:text="Seller:     "
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/storename"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/to"
+        android:layout_below="@id/storename"
+        android:layout_marginTop="5dp"
+        android:text="Buyer:    "
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_below="@id/to"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp" />
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimaryLight">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="ITEM"
+            android:layout_weight="0.25"
+            android:textAlignment="center"
+            android:textStyle="normal|bold" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Quantity"
+            android:layout_weight="0.25"
+            android:textAlignment="center"
+            android:textStyle="normal|bold" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textSize="16dp"
+            android:layout_weight="0.25"
+            android:textAlignment="center"
+            android:textStyle="normal|bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subtotal"
+            android:textSize="16dp"
+            android:layout_weight="0.25"
+            android:textAlignment="center"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item"
+        android:layout_below="@+id/item"
+        android:layout_marginTop="20dp"
+        android:textAlignment="textStart"
+        android:textSize="18dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/total"
+        android:layout_below="@id/item"
+        android:text="Grand Total:  "
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="textStart" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/totalvalue"
+        android:layout_below="@id/total"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textStyle="normal|bold" />
+    </LinearLayout>
+</LinearLayout>
